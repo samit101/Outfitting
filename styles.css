@@ -1,0 +1,16 @@
+:root{--bg:#f8f3ea;--card:#fffdf8;--lav:#e9ddff;--rose:#f3dbe1;--sage:#dfeee2;--navy:#2b3b57;--text:#2f3440}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--text)}
+.app{max-width:430px;margin:0 auto;min-height:100vh;padding:16px 16px 84px}
+.card{background:var(--card);border-radius:18px;padding:14px;box-shadow:0 6px 18px #2b3b5712;margin-bottom:12px}
+h1,h2,h3,p{margin:0 0 8px}.muted{color:#677}
+.chips{display:flex;flex-wrap:wrap;gap:8px}.chip{border:none;border-radius:999px;padding:8px 12px;background:#eee;cursor:pointer}.chip.active{background:var(--lav);color:var(--navy);font-weight:600}
+.btn{border:none;border-radius:14px;padding:12px 14px;font-weight:700;cursor:pointer;width:100%;margin-top:10px}.btn.primary{background:var(--navy);color:#fff}.btn.secondary{background:#fff;border:1px solid #d8d8d8}.btn.small{width:auto;padding:8px 10px;margin:4px 6px 0 0}
+.weather{background:linear-gradient(135deg,var(--lav),var(--sage))}
+.bottom-nav{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid #e4e4e4;display:flex;justify-content:center}
+.bottom-nav .wrap{max-width:430px;width:100%;display:grid;grid-template-columns:repeat(4,1fr)}
+.nav-btn{padding:12px 8px;background:none;border:none;color:#667}.nav-btn.active{color:var(--navy);font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.item-photo{height:94px;border-radius:12px;background:linear-gradient(135deg,#f3efe9,#e8e4dd);display:flex;align-items:center;justify-content:center;color:#888;font-size:12px;overflow:hidden}.item-photo img{width:100%;height:100%;display:block;object-fit:cover;border-radius:12px}
+.row{display:flex;gap:8px;align-items:center;justify-content:space-between}.tags{display:flex;gap:6px;flex-wrap:wrap}.tag{font-size:12px;background:var(--sage);padding:4px 8px;border-radius:999px}
+input,select,textarea{width:100%;padding:10px;border-radius:10px;border:1px solid #ddd;margin-bottom:8px;background:#fff}
+.modal-backdrop{position:fixed;inset:0;background:#0008;display:flex;align-items:center;justify-content:center;padding:16px}.modal{max-width:390px;width:100%;background:#fff;border-radius:16px;padding:14px}
+.hidden{display:none}
